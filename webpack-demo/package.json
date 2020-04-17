@@ -1,0 +1,31 @@
+{
+  "name": "webpack-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./build/webpack.config.js --open --port 3000 --contentBase src --hot",
+    "build": "webpack --config ./build/webpack.config.js --open --port 3000 --contentBase src --hot",
+    "buildImgMin:loader": "webpack --config ./build/webpack.imgMinLoader.config.js --open --port 3000 --contentBase src --hot",
+    "buildImgMin:plugin": "webpack --config ./build/webpack.imgMinPlugin.config.js --open --port 3000 --contentBase src --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "fs": "^0.0.1-security",
+    "html-webpack-plugin": "^4.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
