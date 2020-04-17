@@ -25,8 +25,8 @@ module.export = {
 		new webpack.BannerPlugin('copyright 2020 Keyon Y'),
 		// 把指定文件夹下的文件复制到指定的目录
 		new TransferWebpackPlugin([
-				{ from: '../src/assets', to: '../dist/assets' }
-			], path.resolve(__dirname)),
+			{ from: '../src/assets', to: '../dist/assets' }
+		], path.resolve(__dirname)),
 		new webpack.optimize.OccurrenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		nwe ExtractTextPlugin({filename: 'Contents/[name].css', disable: true, allChunks: true}),
